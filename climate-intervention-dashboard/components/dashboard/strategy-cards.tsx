@@ -105,9 +105,17 @@ export function StrategyCards({
         const Icon = iconMap[s.icon]
         const isActive = s.id === activeId
         return (
-          <button
+          <div
             key={s.id}
+            role="button"
+            tabIndex={0}
             onClick={() => onSelect(s.id)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault()
+                onSelect(s.id)
+              }
+            }}
             className="text-left w-full"
           >
             <Card
@@ -147,7 +155,11 @@ export function StrategyCards({
                   </p>
                 )}
                 {isActive && s.variants && s.variants.length > 0 && onVariantSelect && (
-                  <div className="mt-2 pt-2 border-t border-border">
+                  <div
+                    className="mt-2 pt-2 border-t border-border"
+                    onClick={(e) => e.stopPropagation()}
+                    onKeyDown={(e) => e.stopPropagation()}
+                  >
                     <Select
                       value={selectedVariant ?? undefined}
                       onValueChange={onVariantSelect}
@@ -174,7 +186,7 @@ export function StrategyCards({
                 )}
               </CardContent>
             </Card>
-          </button>
+          </div>
         )
       })}
     </aside>

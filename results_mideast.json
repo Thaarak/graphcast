@@ -1,0 +1,95 @@
+{
+  "region": "Middle East",
+  "bounding_box": {
+    "lat_min": 10,
+    "lat_max": 42,
+    "lon_min": 25,
+    "lon_max": 65
+  },
+  "control": {
+    "drought_cells": 24237,
+    "severity_score": 84337,
+    "continuous_severity": 87145.4783,
+    "counts": {
+      "none": 40923,
+      "abnormally_dry": 3955,
+      "moderate": 4529,
+      "severe": 13675,
+      "extreme": 2078
+    }
+  },
+  "interventions": {
+    "glaciogenic_static": {
+      "drought_cells": 24230,
+      "severity_score": 84261,
+      "continuous_severity": 87071.5499,
+      "cell_reduction_pct": 0.03,
+      "severity_reduction_pct": 0.09,
+      "cont_sev_reduction_pct": 0.0848,
+      "counts": {
+        "none": 40930,
+        "abnormally_dry": 3961,
+        "moderate": 4528,
+        "severe": 13671,
+        "extreme": 2070
+      }
+    },
+    "hygroscopic_enhancement": {
+      "drought_cells": 24222,
+      "severity_score": 84238,
+      "continuous_severity": 87042.3264,
+      "cell_reduction_pct": 0.06,
+      "severity_reduction_pct": 0.12,
+      "cont_sev_reduction_pct": 0.1184,
+      "counts": {
+        "none": 40938,
+        "abnormally_dry": 3958,
+        "moderate": 4528,
+        "severe": 13666,
+        "extreme": 2070
+      }
+    },
+    "electric_ionization": {
+      "drought_cells": 24188,
+      "severity_score": 84073,
+      "continuous_severity": 86887.749,
+      "cell_reduction_pct": 0.2,
+      "severity_reduction_pct": 0.31,
+      "cont_sev_reduction_pct": 0.2957,
+      "counts": {
+        "none": 40972,
+        "abnormally_dry": 3963,
+        "moderate": 4527,
+        "severe": 13632,
+        "extreme": 2066
+      }
+    },
+    "laser_induced_condensation": {
+      "drought_cells": 24225,
+      "severity_score": 84245,
+      "continuous_severity": 87052.5789,
+      "cell_reduction_pct": 0.05,
+      "severity_reduction_pct": 0.11,
+      "cont_sev_reduction_pct": 0.1066,
+      "counts": {
+        "none": 40935,
+        "abnormally_dry": 3961,
+        "moderate": 4526,
+        "severe": 13668,
+        "extreme": 2070
+      }
+    }
+  },
+  "best_intervention": "electric_ionization",
+  "intensity": 0.5,
+  "forecast_date": "2022-01-01 00:00:00",
+  "outputs": {
+    "animations": [
+      "control_vs_glaciogenic_static.mov",
+      "control_vs_hygroscopic_enhancement.mov",
+      "control_vs_electric_ionization.mov",
+      "control_vs_laser_induced_condensation.mov",
+      "all_interventions_comparison.mov"
+    ]
+  }
+}

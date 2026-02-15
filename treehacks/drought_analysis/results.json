@@ -1,0 +1,79 @@
+{
+  "control": {
+    "drought_cells": 24237,
+    "severity_score": 84337,
+    "continuous_severity": 87145.4783,
+    "counts": {
+      "none": 40923,
+      "abnormally_dry": 3955,
+      "moderate": 4529,
+      "severe": 13675,
+      "extreme": 2078
+    }
+  },
+  "interventions": {
+    "glaciogenic_static": {
+      "drought_cells": 23795,
+      "severity_score": 82522,
+      "continuous_severity": 85211.3835,
+      "cell_reduction_pct": 1.82,
+      "severity_reduction_pct": 2.15,
+      "cont_sev_reduction_pct": 2.2194,
+      "counts": {
+        "none": 41365,
+        "abnormally_dry": 3918,
+        "moderate": 4524,
+        "severe": 13317,
+        "extreme": 2036
+      }
+    },
+    "hygroscopic_enhancement": {
+      "drought_cells": 23451,
+      "severity_score": 81154,
+      "continuous_severity": 83863.8489,
+      "cell_reduction_pct": 3.24,
+      "severity_reduction_pct": 3.77,
+      "cont_sev_reduction_pct": 3.7657,
+      "counts": {
+        "none": 41709,
+        "abnormally_dry": 3876,
+        "moderate": 4539,
+        "severe": 13022,
+        "extreme": 2014
+      }
+    },
+    "electric_ionization": {
+      "drought_cells": 21862,
+      "severity_score": 73618,
+      "continuous_severity": 76681.4786,
+      "cell_reduction_pct": 9.8,
+      "severity_reduction_pct": 12.71,
+      "cont_sev_reduction_pct": 12.0075,
+      "counts": {
+        "none": 43298,
+        "abnormally_dry": 3830,
+        "moderate": 4954,
+        "severe": 11186,
+        "extreme": 1892
+      }
+    },
+    "laser_induced_condensation": {
+      "drought_cells": 23555,
+      "severity_score": 81580,
+      "continuous_severity": 84276.2847,
+      "cell_reduction_pct": 2.81,
+      "severity_reduction_pct": 3.27,
+      "cont_sev_reduction_pct": 3.2924,
+      "counts": {
+        "none": 41605,
+        "abnormally_dry": 3894,
+        "moderate": 4521,
+        "severe": 13119,
+        "extreme": 2021
+      }
+    }
+  },
+  "best_intervention": "electric_ionization",
+  "intensity": 0.5,
+  "forecast_date": "2022-01-01 00:00:00"
+}
